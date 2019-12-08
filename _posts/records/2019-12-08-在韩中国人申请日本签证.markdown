@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "在韩中国人申请日本签证"
+date:   2019-12-08 00:57:08 +0900
+categories: records
+permalink: "records/japan_visa"
+tags: life tip
+---
+#{{page.title}}
+{{page.tags}}
