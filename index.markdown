@@ -4,5 +4,3 @@
 
 layout: home
 ---
-<link rel="stylesheet" href="/assets/css/basic.css" />
-say something
