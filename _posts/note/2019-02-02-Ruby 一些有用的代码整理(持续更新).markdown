@@ -1,0 +1,50 @@
+---
+layout: post
+title:   Ruby 一些有用的代码整理(持续更新)
+date:   2019-02-20 15:12:00
+categories: note
+permalink: 'note/ruby_useful_code'
+tags: ruby
+prefix: 笔记
+---
+
+## 时间相关
+
+### DateTime 计算时间前后几天/几小时
+
+- 一天前: `DateTime.now - 1`
+- 一个小时前: `DateTime.now - 1/24.0`
+
+**示例:**
+
+```ruby
+#创建时间
+d = DateTime.now
+=> #<DateTime: 2019-02-20T15:15:30+09:00 ((2458535j,22530s,168333000n),+32400s,2299161j)> 
+
+d.to_s
+=> "2019-02-20T15:15:30+09:00" 
+# 一天前
+(d - 1).to_s
+=> "2019-02-19T15:15:30+09:00" 
+# 一个小时前
+(d - 1/24.0).to_s
+=> "2019-02-20T14:15:30+09:00"  
+```
+*DateTime 加减单位是天数, Time类加减单位是秒.*
+
+### UTC时间
+
+**DateTime 类:** `DateTime.now.new_offset(0)` 
+**Time 类:** `Time.now.utc`
+
+```ruby
+    DateTime.now.to_s
+    => "2019-02-21T16:44:44+09:00" 
+    DateTime.now.new_offset(0).to_s
+    => "2019-02-21T07:46:30+00:00" 
+    Time.now
+    => 2019-02-21 16:46:33 +0900 
+    Time.now.utc
+    => 2019-02-21 07:46:44 UTC 
+```

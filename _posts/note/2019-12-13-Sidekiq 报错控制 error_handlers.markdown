@@ -2,10 +2,10 @@
 layout: post
 title:  Sidekiq 报错时的操作 - error_handlers
 date:   2019-12-13 14:00:10 +0900
-categories: develop
-permalink: 'develop/sidekiq_error_handlers'
+categories: note
+permalink: 'note/sidekiq_error_handlers'
+prefix: 笔记
 tags: rails ruby sidekiq
-prefix: 开发
 ---
 
 > Sidekiq 逻辑出错或报异常的时候, 我们会希望它能自动通知我们, 或者自动关闭一些线程什么的, 这些都可以在error_handlers里达成.

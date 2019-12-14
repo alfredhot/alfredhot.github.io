@@ -1,0 +1,36 @@
+---
+layout: post
+title:   Mac移动硬盘文件名显示灰色问题修复脚本
+date:   2019-02-23
+categories: note
+permalink: 'note/mac_gray_name'
+tags: mac, shell_script
+prefix: 笔记
+---
+
+```sh
+#!/bin/sh
+echo `xattr -d -r com.apple.FinderInfo ./*`
+```
+**使用方法:**
+
+将上面的内容复制到空白文件, 文件保存为`ANY_NAME.sh`, *ANY_NAME*可任意.
+将文件复制到移动硬盘要修复的文件相同目录下, 运行脚本. 
+
+脚本内容是将当前文件夹下所有文件和文件夹里的所有内容中变成灰色的文件属性修改过来
+所以根据硬盘的大小和灰色文件的个数, 脚本会运行一段时间.
+
+我的硬盘是容量3T, 文件2.6T左右, 运行了7,8秒左右.
+
+**运行脚本方法:**
+
+打开Mac的**终端**(Terminal), 定位到该目录下, 例如目录名为`/Volumn/Harddisk/Your_folder`
+
+```sh
+cd /Volumn/Harddisk/Your_folder
+```
+运行脚本
+```sh
+./ANY_NAME.sh
+```
+即可
