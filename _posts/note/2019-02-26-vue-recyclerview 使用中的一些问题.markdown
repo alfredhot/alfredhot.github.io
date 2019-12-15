@@ -5,6 +5,7 @@ date: 2019-02-26
 categories: note
 permalink: 'note/vue_recyclerview_problem'
 tags: vuejs
+post_image: https://tva1.sinaimg.cn/large/006tNbRwgy1g9xtqvkmsqj30i207idfu.jpg
 prefix: 笔记
 ---
 

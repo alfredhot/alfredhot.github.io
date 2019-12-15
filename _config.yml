@@ -33,6 +33,7 @@ github_username:  alfredhot
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-coffeescript
 
 show_excerpts: true
 # Exclude from processing.
@@ -54,3 +55,4 @@ show_excerpts: true
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+default_post_image: /assets/images/default_post_image.jpg

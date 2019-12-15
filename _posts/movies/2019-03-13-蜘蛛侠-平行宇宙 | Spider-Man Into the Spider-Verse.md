@@ -4,6 +4,7 @@ date: 2019-03-09
 layout: post
 categories: movies
 prefix: 影片
+post_image: /assets/images/2019-03-09/2019-03-16-23-15-18.jpg
 tags: movie, b+
 ---
 

@@ -1,0 +1,42 @@
+@import "../var"
+.home
+    .flex_wrapper
+        display: flex
+        ul.post-list
+            width: calc(100%/3)
+            display: flex
+            flex-direction: column
+            padding: 8px
+            li.post-item
+                padding: 10px
+                margin-bottom: 16px
+                background-color: white
+                border: solid 1px $c-border-gray
+                border-radius: 10px
+                position: relative
+                overflow: hidden
+                padding-top: 180px
+                .post_image_wrapper
+                    position: absolute
+                    top: 0
+                    left: 0
+                    right: 0
+                    height: 160px
+                    overflow: hidden
+                    background-size: cover
+                    background-position: top
+                    background-repeat: no-repeat
+                    &:after
+                        content: ""
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        right: 0
+                        height: 10px
+                        background: rgba(0,0,0,0.5)
+                        background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0))
+                h3
+                    a
+                        font-size: 17px
+                        color: black
+                        font-weight: 500

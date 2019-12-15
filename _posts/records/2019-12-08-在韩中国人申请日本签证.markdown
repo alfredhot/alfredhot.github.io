@@ -5,6 +5,7 @@ date:   2019-12-08 00:57:08 +0900
 categories: records
 permalink: "records/japan_visa"
 tags: life tip
+post_image: /assets/images/2019-12-08/japan_visa.jpg
 prefix: 记录
 ---
 

@@ -1,15 +1,11 @@
 ---
-title: Mac 安装 Flutter 环境时的 Ignoring Error
-date: 2019-05-18
-tags: mac, flutter, ruby, gem, cocoapods
----
----
 layout: post
 title:   Mac 安装 Flutter 环境时的 Ignoring Error
 date:   2019-05-18
 categories: note
 permalink: 'note/mac_flutter_ignoring_error'
 tags: mac, flutter, ruby, gem, cocoapods
+post_image: https://tva1.sinaimg.cn/large/006tNbRwgy1g9xtniejgfj30b405kaa0.jpg
 prefix: 笔记
 ---
 

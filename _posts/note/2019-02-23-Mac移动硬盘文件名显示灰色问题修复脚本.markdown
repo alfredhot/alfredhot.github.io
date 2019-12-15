@@ -5,6 +5,7 @@ date:   2019-02-23
 categories: note
 permalink: 'note/mac_gray_name'
 tags: mac, shell_script
+post_image: https://tva1.sinaimg.cn/large/006tNbRwgy1g9xtsdyx1vj30ic08umy0.jpg
 prefix: 笔记
 ---
 

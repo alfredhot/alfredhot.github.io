@@ -5,6 +5,7 @@ date:   2019-12-13 14:00:10 +0900
 categories: note
 permalink: 'note/sidekiq_error_handlers'
 prefix: 笔记
+post_image: https://tva1.sinaimg.cn/large/006tNbRwgy1g9xt6iig1wj30kp07djrd.jpg
 tags: rails ruby sidekiq
 ---
 

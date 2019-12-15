@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<script src="/assets/scripts/home.js"></script>
 <div class="home">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
@@ -11,25 +11,42 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {%- if post.prefix -%}
-              <span>[{{post.prefix}}]</span>
+    <div class="flex_wrapper" >
+      {%- for column_index in (0..2) -%}
+        <ul class="post-list">
+          {%- assign index=0 -%}
+          {%- for post in site.posts -%}
+            {%- assign mod_index = index | modulo: 3 -%}
+            {%- if mod_index == column_index -%}
+              <!-- <span>{{mod_index}}</span> -->
+              <li class="post-item">
+                {%- if post.post_image -%}
+                  <div class="post_image_wrapper" style="background-image: url({{post.post_image}})"></div>
+                  <!-- <img src={{post.post_image}} alt="post_image"/> -->
+                  {%- else -%}
+                  <div class="post_image_wrapper" style="background-image: url({{site.default_post_image}})"></div>
+                  <!-- <img src="/assets/images/default_post_image.jpg" alt="post_image"/> -->
+                {%- endif -%}
+                <h3>
+                  <a class="post-link" href="{{ post.url | relative_url }}">
+                    {%- if post.prefix -%}
+                    <span>[{{post.prefix}}]</span>
+                    {%- endif -%}
+                    {{ post.title | escape }}
+                  </a>
+                </h3>
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                {%- if site.show_excerpts -%}
+                  {{ post.excerpt }}
+                {%- endif -%}
+              </li class="post-item">
             {%- endif -%}
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
+            {%- assign index= index | plus: 1 -%}
+          {%- endfor -%}
+        </ul>
       {%- endfor -%}
-    </ul>
+    </div>
 
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
