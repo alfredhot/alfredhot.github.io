@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<script src="/assets/scripts/post.js"></script>
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -22,6 +23,9 @@ layout: default
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
   {%- endif -%}
+
+  {%- include gitalk_comments.html -%}
+
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
