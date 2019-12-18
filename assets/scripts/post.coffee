@@ -1,5 +1,8 @@
 ---
 ---
+console.log location.pathname
+console.log location.href
+console.log md5(location.pathname)
 gitalk = new Gitalk({
   clientID: 'GitHub Application Client ID'
   clientSecret: 'GitHub Application Client Secret'
