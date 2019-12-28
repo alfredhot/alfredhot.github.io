@@ -3,8 +3,8 @@ layout: post
 title:  在韩中国人申请日本签证经历_精简版 1.材料篇
 date:   2019-12-28 12:15:33 +0900
 categories: records
-permalink: ''
-tags: 记录, record
+permalink: 'records/japan_visa/easy_1'
+tags: life
 post_image: 
 prefix: 记录
 ---
