@@ -6,6 +6,7 @@ categories: note
 permalink: 'note/ruby_useful_code'
 tags: ruby
 prefix: 笔记
+post_image: '/assets/images/2019-02-02/ruby.png'
 ---
 
 ## 时间相关

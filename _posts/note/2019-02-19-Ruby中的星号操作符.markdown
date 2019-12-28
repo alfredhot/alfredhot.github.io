@@ -6,6 +6,7 @@ categories: note
 permalink: 'note/ruby_splat_operator'
 tags: ruby, rails, backend, 转载
 prefix: 笔记
+post_image: '/assets/images/2019-02-02/ruby.png'
 ---
 
 > 本文转载自 lazybios 在 [10条](http://www.10tiao.com)的文章 **[Ruby: Ruby中的星号操作符(Splat Operator)](http://www.10tiao.com/html/568/201509/209984764/1.html)**
