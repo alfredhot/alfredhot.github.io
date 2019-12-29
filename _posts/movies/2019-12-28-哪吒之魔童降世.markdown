@@ -6,7 +6,7 @@ categories: movies
 permalink: '/movies/nezha'
 tags: movies
 prefix: 电影
-post_image: '/assets/images/2019-12-28/nezha.jpg'
+post_image: '/assets/images/2019-12-28/nezha.jpeg'
 ---
 
 ## Info
