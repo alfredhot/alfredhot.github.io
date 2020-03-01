@@ -5,7 +5,7 @@ date:   2019-12-29 00:29:12 +0900
 categories: movies
 permalink: '/movies/nezha'
 tags: movies
-prefix: 电影
+prefix: 观影
 post_image: '/assets/images/2019-12-28/nezha.jpeg'
 ---
 
@@ -17,7 +17,7 @@ post_image: '/assets/images/2019-12-28/nezha.jpeg'
 - **演员:** 吕艳婷 / 囧森瑟夫 / 瀚墨 / 陈浩 / 绿绮 /
 - **剧照:**
 
-![nezha](/assets/images/2019-12-28/nezha.jpeg)
+![nezha](/assets/images/2019-12-28/nezha.jpeg){:class .w50}
 
 ## Story
 
