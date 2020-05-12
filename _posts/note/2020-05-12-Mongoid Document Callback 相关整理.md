@@ -10,12 +10,12 @@ prefix: 笔记
 ---
 mongoid的文档实在是不走心..
 
-![mongoid](/assets/images/2020-05/mongoid.jpg)(.w50)
+![mongoid](/assets/images/2020-05/mongoid.jpg){: .w50}
 
 Mongodb的文档里对callback的说明过于简短, 只看文档弄不清楚callback实际被呼叫的时间点.
  尝试过在本地的mongoid安装包里也找源码, 也没有找到. 甚至在调用反馈函数的时候, Rubymine会提示该函数不存在.
 
-![callback_sample](/assets/images/2020-05/mongoid_callback_sample.png)(.w50)
+![callback_sample](/assets/images/2020-05/mongoid_callback_sample.png){: .w50}
 
 后来自己挨个尝试了一下, 函数的用法和文档中的一致, IDE报warning不用管它.
 ```ruby
