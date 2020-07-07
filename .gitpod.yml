@@ -1,5 +1,5 @@
 image:
   file: .gitpod.Dockerfile
 
-tasks:
-  - init: bundle install
+# tasks:
+#   - init: bundle install
