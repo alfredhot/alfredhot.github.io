@@ -9,5 +9,5 @@ FROM gitpod/workspace-full
 # RUN bundle install -j4
 ENV PROJECT_ROOT /workspace/alfredhot.github.io
 
-RUN mkdir ${PROJECT_ROOT}/tmp/alfred
+RUN mkdir -p ${PROJECT_ROOT}/tmp/alfred
 RUN mkdir ./temp_dir
