@@ -6,7 +6,7 @@ FROM gitpod/workspace-full
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
-RUN bundle install -j4
+# RUN bundle install -j4
 ENV PROJECT_ROOT /workspace/alfredhot.github.io
 
 RUN mkdir ${PROJECT_ROOT}/tmp/alfred
