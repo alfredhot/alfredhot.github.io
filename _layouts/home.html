@@ -39,6 +39,7 @@ layout: default
                 <span class="post-meta">{{ post.date | date: date_format }}</span>
                 {%- if site.show_excerpts -%}
                   {{ post.excerpt }}
+                  {{ site.show_excerpts }}
                 {%- endif -%}
               </li class="post-item">
             {%- endif -%}
