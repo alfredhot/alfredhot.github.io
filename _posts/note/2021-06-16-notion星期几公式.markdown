@@ -1,0 +1,39 @@
+---
+layout: post
+title: Notion 公式显示星期几
+date: 2021-06-16 17:40:34 +0900
+categories: note
+permalink: 'note/notion-formula-week-day'
+tags:  notion
+post_image: https://i.loli.net/2021/06/16/3aVjPZ4hxGpmzUS.png
+prefix: 笔记
+---
+notion 数据库里时间格式很少, 连显示周几都做不到. 所以只能自己用公式做出来.
+
+公式本身很简单, 只不过套用多个条件式很麻烦, 每次要自己写太麻烦了. 所以整理在下边, 需要的时候直接复制粘贴就好.
+
+## 公式:
+
+```jsx
+day(prop("时间")) == 0) ? "日" : ((day(prop("时间")) == 1) ? "月" : ((day(prop("时间")) == 2) ? "火" : ((day(prop("时间")) == 3) ? "水" : ((day(prop("时间")) == 4) ? "木" : ((day(prop("时间")) == 5) ? "金" : "土"))))
+```
+
+这是最基本的公式, 至于显示的字符自己选择就好.
+
+## 应用:
+
+- add(星期公式, "曜日")
+
+```jsx
+add((day(prop("时间")) == 0) ? "日" : ((day(prop("时间")) == 1) ? "月" : ((day(prop("时间")) == 2) ? "火" : ((day(prop("时间")) == 3) ? "水" : ((day(prop("时间")) == 4) ? "木" : ((day(prop("时间")) == 5) ? "金" : "土"))))), "曜日")
+```
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cd5ea613-8ad2-4b39-89ab-59c147e401cf/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cd5ea613-8ad2-4b39-89ab-59c147e401cf/Untitled.png)
+
+- 完整日期
+
+```jsx
+add(formatDate(prop("时间"), "Y-MM-DD 星期"), (day(prop("时间")) == 0) ? "日" : ((day(prop("时间")) == 1) ? "一" : ((day(prop("时间")) == 2) ? "二" : ((day(prop("时间")) == 3) ? "三" : ((day(prop("时间")) == 4) ? "四" : ((day(prop("时间")) == 5) ? "五" : "六"))))))
+```
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4b7d2b77-3002-4972-83a8-f2a997116c8d/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4b7d2b77-3002-4972-83a8-f2a997116c8d/Untitled.png)
