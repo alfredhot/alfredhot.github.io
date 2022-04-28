@@ -5,9 +5,11 @@ date: 2022-04-28 14:49:42 +0900
 categories: note
 permalink: 'note/rvm_to_rbenv'
 tags: ruby, rails, rvm, rbenv
-post_image: assets/images/2022-01/welcome.jpeg
+post_image: assets/images/2022-04/rvm_rbenv.jpeg
 prefix: 笔记
 ---
+
+![rvm vs rbenv](/assets/images/2022-04/rvm_rbenv.jpeg)
 
 > 参考原文: [https://gist.github.com/akdetrick/7604130](https://gist.github.com/akdetrick/7604130)  
 > 本文在翻译原文基础上对在实际操作中发生的问题追加了零星的解决办法.
