@@ -1,0 +1,139 @@
+---
+layout: post
+title: 从RVM转到rbenv
+date: 2022-04-28 14:49:42
+categories: note
+permalink: 'note/rvm_to_rbenv'
+tags: ruby, rails, rvm, rbenv
+post_image: assets/images/2022-01/welcome.jpeg
+prefix: 笔记
+---
+
+> 参考原文: [https://gist.github.com/akdetrick/7604130](https://gist.github.com/akdetrick/7604130)  
+> 本文在翻译原文基础上对在实际操作中发生的问题追加了零星的解决办法.
+
+起初看着RVM功能要比rbenv多, 所以选择了RVM来管理ruby的版本, 但经过一段时间的使用发现对于ruby版本的控制还是rbenv方便些, 而且Gemset的设置多少有点麻烦, 设置不好连rails创建项目都报错. 所以索性换成rbenv.
+
+## **1) remove RVM from your system**
+
+---
+
+首先,要删除RVM.
+
+以下的命令等让你清理掉RVM的安装文件以及通过RVM安装的所有版本的Ruby.
+
+```bash
+# rvm 的"自爆"模式, 将自动删除安装的ruby和自身的文件
+$ rvm implode
+
+# 偶尔会有因权限问题导致 ~/.rvm 删除不掉的问题
+$ rm -rf ~/.rvm
+
+$ gem uninstall rvm
+$ rm ~/.rvmrc
+$ rm /etc/rvmrc
+```
+
+## **2) remove any remaining traces of RVM**
+
+---
+
+从以下文件中删除所有关联rvm引用路径的设置
+
+- `.profile`
+- `.bash_profile`
+- `.bashrc`
+
+zsh还需要修改:
+
+- `.zshrc`
+
+## **3) install rbenv**
+
+---
+
+使用Homebrew安装rbenv和ruby-build插件
+
+rbenv的安装也可以参考rbenv自家的文档: [https://github.com/rbenv/rbenv#installation](https://github.com/rbenv/rbenv#installation)
+
+```bash
+$ brew update
+$ brew install rbenv ruby-build
+```
+
+## **4) install rubies for rbenv**
+
+---
+
+使用rbenv安装需要的ruby版本
+
+```bash
+# 列出可安装的ruby稳定版本:
+$ rbenv install -l
+
+# 安装指定版本的ruby:
+$ rbenv install 2.0.0-p247
+
+```
+
+**Note:** 新安装一个ruby版本或gem之后如果出现问题, 运行 `$ rbenv rehash`命令
+
+## **5) switching ruby versions in rbenv**
+
+---
+
+切换使用的ruby版本
+
+有两种方法可以切换使用的ruby版本
+
+### 在项目路径中指定使用的ruby版本
+
+大部分ruby项目路径中包含有一个`.ruby-version`文件, 用以指定在该项目中使用的ruby版本.
+
+### 手动更换版本
+
+```bash
+# 列出所有已安装,可使用的ruby版本
+$ rbenv versions
+
+# 设置在当前目录下使用的版本
+$ rbenv local 3.0.4
+
+# 设置全局使用版本
+$ rbenv global 3.0.4
+```
+
+## **6) install the bundler gem**
+
+---
+
+安装bundler gem
+
+我们推荐你安装bundler, 在ruby使用中它是必不可少的一个工具, bundler可以帮你管理项目中所依赖的各种gem包.
+
+```bash
+$ gem install bundler
+```
+
+## **7) never fight with RVM again**
+
+---
+
+## PS: 过程中遇到的问题
+
+### rbenv安装ruby时报错: BUILD FAILED
+
+具体报错内容没能及时保存, 在so上找到一篇类似的内容:
+
+[https://www.notion.so/alfredhot/RVM-rbenv-MacOS-6d877389647f4188b4a91647f706de30#6568afb370c74aacb0b9c30f212fab1c](https://www.notion.so/RVM-rbenv-MacOS-6d877389647f4188b4a91647f706de30)
+
+只是描述的问题相似, 但我并不是通过条目里的最高赞答复解决的问题, 我使用的反而是这一条:
+
+![so capture](https://tva1.sinaimg.cn/large/e6c9d24egy1h1pe4skdm9j20p005v74t.jpg)
+
+```bash
+sudo rm -rf /Library/Developer/CommandLineTools
+sudo xcode-select --install
+```
+
+不知道是不是因为删除了整个CommandLineTools文件夹的缘故, 重新安装CommandLineTools的时间十分漫长. 总之在安装上CommandLineTools之后rbenv就可以正常安装ruby了.
