@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 从RVM转到rbenv
-date: 2022-04-28 14:49:42
+date: 2022-04-28 14:49:42 +0900
 categories: note
 permalink: 'note/rvm_to_rbenv'
 tags: ruby, rails, rvm, rbenv
