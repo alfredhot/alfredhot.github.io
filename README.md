@@ -2,5 +2,6 @@
 [![powered by Jekyll](https://img.shields.io/badge/powered_by-Jekyll-blue.svg)](https://jekyllrb.com/)
 ## alfredhot的不定期更新的日常
 
-### 近期更新条目
+### 近期更新
 - **2022/04/28** 从RVM转到rbenv
+- **2022/04/28** 修改Readme.md
