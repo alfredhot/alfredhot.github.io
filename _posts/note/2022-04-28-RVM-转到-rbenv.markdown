@@ -127,7 +127,7 @@ $ gem install bundler
 
 具体报错内容没能及时保存, 在so上找到一篇类似的内容:
 
-[https://www.notion.so/alfredhot/RVM-rbenv-MacOS-6d877389647f4188b4a91647f706de30#6568afb370c74aacb0b9c30f212fab1c](https://www.notion.so/RVM-rbenv-MacOS-6d877389647f4188b4a91647f706de30)
+[https://stackoverflow.com/questions/23177652/rbenv-install-ruby-build-failed](https://stackoverflow.com/questions/23177652/rbenv-install-ruby-build-failed)
 
 只是描述的问题相似, 但我并不是通过条目里的最高赞答复解决的问题, 我使用的反而是这一条:
 
