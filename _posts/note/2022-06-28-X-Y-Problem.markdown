@@ -11,7 +11,7 @@ prefix: 笔记
 
 > 逛V站时偶然看到有人提到**X-Y Problem**, 同时还附上了一个说明连接, 了解一下后发现是自己经常犯的错误. 所以直接把人家的博文转载到自己的博客里, 希望对别人也能起到一些帮助.
 > 
-> 出处:  [酷 壳 – CoolShell](https://coolshell.cn/) 的文章 [<X-Y PROBLEM>](https://coolshell.cn/articles/10804.html)
+> 出处:  [酷 壳 – CoolShell](https://coolshell.cn/) 的文章 [X-Y PROBLEM](https://coolshell.cn/articles/10804.html)
 > 
 > 文章信息: *2013年12月16日  陈皓 评论 133 条评论  151,345 人阅读*
 > 
