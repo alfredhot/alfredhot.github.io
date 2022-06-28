@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 转载:X-Y-Problem
-date: 2022/06/28 8:52 AM
+date: 2022/06/28 08:52:00 +0900
 categories: note
 permalink: 'note/2022-06-28-x-y-problem'
 tags: 转载, 
