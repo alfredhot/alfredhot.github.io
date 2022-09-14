@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: EastBlue的绿藻
+title: EastBlue的绿藻头
 email: alfredhot@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   当你在想是不是已经晚了的时候,就还没晚.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.eastblue.top" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://eastblue.top" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  alfredhot
 
