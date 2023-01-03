@@ -82,8 +82,7 @@ prefix: 记录
 
     可以直接在 [hometax](https://www.hometax.go.kr/) 在线申请 `소득금액증명`
 
-    ![screenshot](https://tva1.sinaimg.cn/large/006tNbRwgy1g9ucba39vej30if0gqgo8.jpg){: .w60}
-    
+    ![screenshot](/assets/images/2019-12/hometax.png){: .w60}
     这个也应该可以到街道办事处`동사무서`或者区厅`구청`办理, 但收入证明只能出具前一年的收入, 所以银行流水要比这个更有时效性. `有条件还是办理银行流水证明吧.`
 
 - 银行签发的银行流水或银行账本复印件(3个月)
@@ -101,7 +100,7 @@ prefix: 记录
 
     右边写上当天入住的酒店名称和联系电话
 
-    ![schedule](https://tva1.sinaimg.cn/large/006tNbRwgy1g9vfyxq48hj30fe0e9dhf.jpg){:.w70}
+    ![schedule](/assets/images/2019-12/schedule.png){:.w70}
 
 - 酒店预定证明
 
@@ -120,7 +119,7 @@ prefix: 记录
 
 申请书下方的`选择栏`不要忘了填, 申请`多次往返`如果审核没有通过还可以转成`单次往返`的签证继续审核.
 
-![check](https://tva1.sinaimg.cn/large/006tNbRwgy1g9vghabnpkj30ht07ejrl.jpg){:.w90.image_border}
+![check](/assets/images/2019-12/agree.png){:.w90.image_border}
 
 ### 9. 财产证明(6个月)
 
